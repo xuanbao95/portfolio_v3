@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import Logo from "../components/logo/index";
-import {useRouter} from "next/navigation";
+import { usePathname } from 'next/navigation'
 import TwitterIcon, { FaceBookIcon, GithubIcon, LinkedInIcon } from "../components/icon/index";
 import {motion} from 'framer-motion'
 export default function Navbar() {
@@ -12,8 +12,7 @@ export default function Navbar() {
             <nav>
                 <CustomLink href={'/'} title={'Home'} className={'mr-4'}/>
                 <CustomLink href={'/about'} title={'About'} className={'mx-4'}/>
-                <CustomLink href={'/projects'} title={'Projects'} className={'mx-4'}/>
-                <CustomLink href={'/article'} title={'Articles'} className={'ml-4'}/>
+                <CustomLink href={'/projects'} title={'Projects'} className={'ml-4'}/>
             </nav>
 
             <nav className='flex items-center justify-center flex-wrap'>
@@ -57,13 +56,15 @@ interface interfaceLink {
     target: string
 }
 const CustomLink = ({href, title, className, target}: interfaceLink)=>{
-    const router= useRouter()
+    const pathName= usePathname()
+    console.log(pathName)
     return(
         <Link href={href} target={!!target ? target : ''} className={`${className} relative group`}>
             {title}
             <span
                 className={`
                     h-[1px] inline-block w-0 bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
+                    ${pathName === href && 'w-full'}
                 `}
             >
                 &nbsp;

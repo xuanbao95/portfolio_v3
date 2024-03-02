@@ -5,6 +5,8 @@ import LayOutPage from "../components/layout/index";
 import Image from "next/image";
 import avatar from '../../public/images/profile/developer-pic-2.jpg'
 import Skills from "../components/skill/index";
+import Experience from "../components/exprience/index";
+import Education from "../components/education/index";
 
 export default function About() {
     return (
@@ -52,6 +54,8 @@ export default function About() {
                         </div>
                     </div>
                 <Skills/>
+                <Experience/>
+                <Education/>
                 </LayOutPage>
             </main>
         </>

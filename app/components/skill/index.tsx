@@ -29,7 +29,7 @@ export default function Skills() {
                 <Skill name={'Style Component'} x={'7vw'} y={'-17.5vw'} />
                 <Skill name={'SASS'} x={'-15vw'} y={'15.5vw'} />
                 <Skill name={'Figma'} x={'-15vw'} y={'15.5vw'} />
-                <Skill name={'Tailwind css'} x={'-15vw'} y={'15.5vw'} />
+                <Skill name={'Tailwind css'} x={'17vw'} y={'-7vw'} />
             </div>
         </>
     )
@@ -45,8 +45,9 @@ const Skill =({name, x,y})=>{
             scale: 1.05
         }}
         initial={{x: 0, y:0}}
-        animate={{x:x, y:y}}
+        whileInView={{x:x, y:y}}
         transition={{duration: 1.5}}
+        viewport={{once: true}}
     >
         {name}
     </motion.div>
