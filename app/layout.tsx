@@ -16,9 +16,11 @@ export default function RootLayout({
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
+
+
     return (
         <html lang="en">
-        <body className={`${montserrat.className} h-screen`}>
+        <body className={`${montserrat.className} dark:bg-dark h-screen`}>
             <Navbar/>
             {children}
             <FooterPage/>
