@@ -1,7 +1,13 @@
 'use client'
 import {motion, AnimatePresence} from'framer-motion'
+import {usePathname} from "next/navigation";
 
-export default function TransitionEffect({path}) {
+export default function TransitionEffect({
+                                             children,
+                                         }: Readonly<{
+    children: React.ReactNode;
+}>) {
+    const path = usePathname()
     return(
         <AnimatePresence mode={'wait'}>
             <motion.div
@@ -25,6 +31,7 @@ export default function TransitionEffect({path}) {
                 animate={{x:'0%', width:'0%'}}
                 transition={{delay:0.4,duration: 0.8, ease:'easeInOut'}}
             />
+            {children}
         </AnimatePresence>
 
     )

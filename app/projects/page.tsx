@@ -11,7 +11,6 @@ export default function Projects() {
     const path = usePathname()
     return (
         <main className='w-full mb-16 bg-light dark:bg-dark flex flex-col items-center justify-center'>
-            <TransitionEffect path={3}/>
             <LayOutPage
                 className='pt-16'
             >

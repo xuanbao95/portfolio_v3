@@ -13,7 +13,6 @@ export default function Home() {
     const path = usePathname()
     return (
         <main className='flex text-dark w-full min-h-screen bg-light dark:bg-dark dark:text-light'>
-            <TransitionEffect path={1}/>
             <LayOutPage className={'pt-0 md:pt-16 sm:pt-8'}>
                 <div className='flex items-center justify-between w-full lg:flex-col'>
                     <div className='w-1/2 md:w-full'>

@@ -3,7 +3,7 @@ import {Inter, Montserrat} from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar/index";
 import FooterPage from "./footer/index";
-
+import TransitionEffect from './components/transitionEffect'
 const montserrat = Montserrat({subsets: ["latin"], variable: '--font-mont'});
 
 export const metadata: Metadata = {
@@ -21,9 +21,11 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`${montserrat.className} dark:bg-dark h-screen`}>
+        <TransitionEffect>
             <Navbar/>
             {children}
             <FooterPage/>
+        </TransitionEffect>
         </body>
         </html>
     );
