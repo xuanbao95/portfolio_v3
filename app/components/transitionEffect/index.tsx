@@ -12,7 +12,7 @@ export default function TransitionEffect({
         <AnimatePresence mode={'wait'}>
             <motion.div
                 key={path}
-                className='fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-primary'
+                className='fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-primaryDark'
                 initial={{x:'100%', width: '100%'}}
                 animate={{x:'0%', width:'0%'}}
                 exit={{x:['0%','100%'], width:['0%','100%']}}

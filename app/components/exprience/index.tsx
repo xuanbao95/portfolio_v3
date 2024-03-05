@@ -29,14 +29,15 @@ export default function Experience() {
                 />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Detail
-                        position={'Software Engineer @Google'}
-                        time={'2022-Present'}
-                        address={'Mountain View, CA'}
+                        position={'Front end developer'}
+                        time={'2021-Present'}
+                        address={'199 Điện Biên Phủ, p.15, Q.Bình Thạnh'}
                         work={'Worked on a team responsible for developing new features for Google\'s \n' +
                         'search engine, including improving the accuracy and relevance of search results and \n' +
                         'developing new tools for data analysis and visualization.'}
-                        company={'Google'}
-                        companyLink={'www.google.com'}
+                        company={'Upos'}
+                        projectLink={'https://banhang.upos.vn/'}
+                        companyLink={'https://upos.vn/'}
                     />
                     <Detail
                         position={'Intern @Facebook'}
@@ -99,13 +100,14 @@ export default function Experience() {
 interface InterfaceDetail {
     position: string,
     company: string,
-    companyLink: string,
+    projectLink: string,
     time: string,
     address: string,
-    work: string
+    work: string,
+    project: string,
 }
 
-const Detail = ({position, company, companyLink, time, address, work}: InterfaceDetail) => {
+const Detail = ({position, company, projectLink, time, address, work, project}: InterfaceDetail) => {
     const ref = useRef(null)
     return (
         <li ref={ref} className='
@@ -120,10 +122,10 @@ const Detail = ({position, company, companyLink, time, address, work}: Interface
             >
                 <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>{position} <a target={'_blank'}
                                                                                   className='text-primary dark:text-primaryDark capitalize'
-                                                                                  href={companyLink}>@{companyLink}</a>
+                                                                                  href={projectLink}>{project}</a>
                 </h3>
                 <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
-                    {time} | {address}
+                    {time} | {company}
                 </span>
                 <p className='font-medium w-full md:text-sm'>
                     {work}
