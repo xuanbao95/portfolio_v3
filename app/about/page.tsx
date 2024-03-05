@@ -3,11 +3,10 @@ import Head from "next/head";
 import AnimatedText from "../components/animatedText/index";
 import LayOutPage from "../components/layout/index";
 import Image from "next/image";
-import avatar from '../../public/images/profile/developer-pic-2.jpg'
+import avatar from '../../public/images/profile/me.jpg'
 import Skills from "../components/skill/index";
 import Experience from "../components/exprience/index";
 import Education from "../components/education/index";
-import TransitionEffect from "../components/transitionEffect/index";
 import {usePathname} from "next/navigation";
 
 export default function About() {

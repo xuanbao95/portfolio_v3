@@ -52,10 +52,11 @@ export default function Experience() {
                     <Detail
                         position={'Soldier'}
                         time={'2017-2019'}
-                        address={''}
-                        work={'Worked on a team responsible for developing new features for Google\'s \n' +
-                        'search engine, including improving the accuracy and relevance of search results and \n' +
-                        'developing new tools for data analysis and visualization.'}
+                        address={'Tô Ký, Trung Chánh, Hóc Môn, Thành phố Hồ Chí Minh'}
+                        work={'Upon entering the military, each young man will be trained in military knowledge, combat skills, as well as physical and mental training.' +
+                        '' + ' They will learn how to live collectively, obey discipline, and cherish comradeship.' +
+                        ' Through the training process, each person will become more mature, stronger, and more aware of their responsibility to their family and society.'
+                        + ' Besides military training, the army also focuses on political and ideological education for soldiers. Through that, they will raise awareness of patriotism, national pride, and awareness of protecting the Fatherland.'}
                         company={'Gia Đinh Regiment'}
                         companyLink={''}
                     />
