@@ -32,62 +32,32 @@ export default function Experience() {
                         position={'Front end developer'}
                         time={'2021-Present'}
                         address={'199 Điện Biên Phủ, p.15, Q.Bình Thạnh'}
-                        work={'Worked on a team responsible for developing new features for Google\'s \n' +
-                        'search engine, including improving the accuracy and relevance of search results and \n' +
-                        'developing new tools for data analysis and visualization.'}
+                        work={'Worked as a frontend developer for e-commerce platforms, online sales management, and user management systems.... Developed web user ' +
+                        'interfaces, ensuring aesthetic appeal,' +
+                        ' efficiency, and ease of use. Successfully developed and implemented the bulk order feature for the e-commerce platform.' +
+                        ''}
                         company={'Upos'}
-                        projectLink={'https://banhang.upos.vn/'}
                         companyLink={'https://upos.vn/'}
                     />
                     <Detail
-                        position={'Intern @Facebook'}
-                        time={'Summer 2021'}
-                        address={'Menlo Park, CA.'}
-                        work={'Worked on a team responsible for developing a new mobile app feature that allowed users to create and \n' +
-                        'share short-form video content, including designing and implementing a new user interface and developing \n' +
-                        'the backend infrastructure to support the feature.'}
-                        company={'Google'}
-                        companyLink={'www.google.com'}
+                        position={'Employee'}
+                        time={'2019-2021'}
+                        address={''}
+                        work={'Worked at the Vietnam Post Office. I was assigned to the position of handling returned parcels and goods. ' +
+                        'This involved recording the number of items that couldn\'t be delivered to the buyers and were returned to the sellers. I also updated the system with the statistics of returned goods and stored relevant documents related to return shipments. ' +
+                        'Additionally, I dealt with any issues arising from returned goods, such as breakage or missing items.'}
+                        company={'Viet Nam Post'}
+                        companyLink={'https://vnpost.vn/'}
                     />
                     <Detail
-                        position={'Software Engineer @Google'}
-                        time={'2022-Present'}
-                        address={'Mountain View, CA'}
+                        position={'Soldier'}
+                        time={'2017-2019'}
+                        address={''}
                         work={'Worked on a team responsible for developing new features for Google\'s \n' +
                         'search engine, including improving the accuracy and relevance of search results and \n' +
                         'developing new tools for data analysis and visualization.'}
-                        company={'Google'}
-                        companyLink={'www.google.com'}
-                    />
-                    <Detail
-                        position={'Software Engineer @Google'}
-                        time={'2022-Present'}
-                        address={'Mountain View, CA'}
-                        work={'Worked on a team responsible for developing new features for Google\'s \n' +
-                        'search engine, including improving the accuracy and relevance of search results and \n' +
-                        'developing new tools for data analysis and visualization.'}
-                        company={'Google'}
-                        companyLink={'www.google.com'}
-                    />
-                    <Detail
-                        position={'Software Engineer @Google'}
-                        time={'2022-Present'}
-                        address={'Mountain View, CA'}
-                        work={'Worked on a team responsible for developing new features for Google\'s \n' +
-                        'search engine, including improving the accuracy and relevance of search results and \n' +
-                        'developing new tools for data analysis and visualization.'}
-                        company={'Google'}
-                        companyLink={'www.google.com'}
-                    />
-                    <Detail
-                        position={'Software Engineer @Google'}
-                        time={'2022-Present'}
-                        address={'Mountain View, CA'}
-                        work={'Worked on a team responsible for developing new features for Google\'s \n' +
-                        'search engine, including improving the accuracy and relevance of search results and \n' +
-                        'developing new tools for data analysis and visualization.'}
-                        company={'Google'}
-                        companyLink={'www.google.com'}
+                        company={'Gia Đinh Regiment'}
+                        companyLink={''}
                     />
 
 
@@ -100,14 +70,13 @@ export default function Experience() {
 interface InterfaceDetail {
     position: string,
     company: string,
-    projectLink: string,
     time: string,
     address: string,
     work: string,
-    project: string,
+    companyLink: string
 }
 
-const Detail = ({position, company, projectLink, time, address, work, project}: InterfaceDetail) => {
+const Detail = ({position, company, time, address, work, companyLink}: InterfaceDetail) => {
     const ref = useRef(null)
     return (
         <li ref={ref} className='
@@ -117,15 +86,18 @@ const Detail = ({position, company, projectLink, time, address, work, project}: 
             <LiIcon reference={ref}/>
             <motion.div
                 initial={{y: 50}}
-                whileInView={{y:0}}
-                transtion={{duration: 0.5 , type:'spring'}}
+                whileInView={{y: 0}}
+                transtion={{duration: 0.5, type: 'spring'}}
             >
-                <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>{position} <a target={'_blank'}
-                                                                                  className='text-primary dark:text-primaryDark capitalize'
-                                                                                  href={projectLink}>{project}</a>
+                <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>{position} <a
+                    target={!!companyLink && '_blank'}
+                    className='text-primary dark:text-primaryDark capitalize'
+                    href={!!companyLink && companyLink}>@{company}</a>
                 </h3>
                 <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
-                    {time} | {company}
+                    {time}{
+                    !!address && ` | ${address}`
+                }
                 </span>
                 <p className='font-medium w-full md:text-sm'>
                     {work}
