@@ -91,7 +91,7 @@ const Detail = ({position, company, time, address, work, companyLink}: Interface
                 transition={{duration: 0.5, type: 'spring'}}
             >
                 <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>{position} <a
-                    target={!!companyLink && '_blank'}
+                    target={!!companyLink ? '_blank': ''}
                     className='text-primary dark:text-primaryDark capitalize'
                     href={!!companyLink && companyLink}>@{company}</a>
                 </h3>
