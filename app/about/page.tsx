@@ -7,10 +7,8 @@ import avatar from '../../public/images/profile/me.jpg'
 import Skills from "../components/skill/index";
 import Experience from "../components/exprience/index";
 import Education from "../components/education/index";
-import {usePathname} from "next/navigation";
 
 export default function About() {
-    const path = usePathname()
     return (
         <>
             <Head>

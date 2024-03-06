@@ -44,7 +44,7 @@ export default function Experience() {
                         time={'2019-2021'}
                         address={''}
                         work={'Worked at the Vietnam Post Office. I was assigned to the position of handling returned parcels and goods. ' +
-                        'This involved recording the number of items that couldn\'t be delivered to the buyers and were returned to the sellers. I also updated the system with the statistics of returned goods and stored relevant documents related to return shipments. ' +
+                        'This involved recording the number of items that could not be delivered to the buyers and were returned to the sellers. I also updated the system with the statistics of returned goods and stored relevant documents related to return shipments. ' +
                         'Additionally, I dealt with any issues arising from returned goods, such as breakage or missing items.'}
                         company={'Viet Nam Post'}
                         companyLink={'https://vnpost.vn/'}
