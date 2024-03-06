@@ -68,7 +68,7 @@ const Detail = ({type, time, place, info}: InterfaceDetail) => {
             <motion.div
                 initial={{y: 50}}
                 whileInView={{y: 0}}
-                transtion={{duration: 0.5, type: 'spring'}}
+                transition={{duration: 0.5, type: 'spring'}}
             >
                 <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
                     {type}
