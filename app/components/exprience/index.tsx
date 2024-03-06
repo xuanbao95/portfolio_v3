@@ -93,7 +93,7 @@ const Detail = ({position, company, time, address, work, companyLink}: Interface
                 <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>{position} <a
                     target={!!companyLink ? '_blank': ''}
                     className='text-primary dark:text-primaryDark capitalize'
-                    href={!!companyLink && companyLink}>@{company}</a>
+                    href={companyLink !== '' && companyLink}>@{company}</a>
                 </h3>
                 <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
                     {time}{
