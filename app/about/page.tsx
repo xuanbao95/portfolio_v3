@@ -30,9 +30,9 @@ export default function About() {
                                 passionate about building beautiful, functional, and user-centered web interfaces.
                             </p>
                             <p className='font-medium my-4'>Throughout my 3-year journey, I have always
-                                been on the lookout for innovative and effective ways to turn my clients' visions into
+                                been on the lookout for innovative and effective ways to turn my clients&apos; visions into
                                 reality. For me, Front-end development is more than just creating visually appealing
-                                interfaces, it's also about solving problems and delivering intuitive, enjoyable
+                                interfaces, it&apos;s also about solving problems and delivering intuitive, enjoyable
                                 experiences for users.
                             </p>
                             <p className='font-medium'>No matter the project, be it a website, mobile app, or any other
