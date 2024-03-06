@@ -74,7 +74,7 @@ interface InterfaceDetail {
     time: string,
     address: string,
     work: string,
-    companyLink: string
+    companyLink: any
 }
 
 const Detail = ({position, company, time, address, work, companyLink}: InterfaceDetail) => {
