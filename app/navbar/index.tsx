@@ -42,7 +42,7 @@ export default function Navbar() {
                         whileTap={{scale: 0.9}}
                         className='w-6 mr-3'
                     >
-                        <GithubIcon/>
+                        <GithubIcon className={''}/>
                     </motion.a>
                     <motion.a
                         href='https://www.linkedin.com/in/xu%C3%A2n-b%E1%BA%A3o-l%C6%B0u-gia-473899221/'
@@ -96,7 +96,7 @@ export default function Navbar() {
                             whileTap={{scale: 0.9}}
                             className='w-6 mr-3 sm:mx-1'
                         >
-                            <GithubIcon/>
+                            <GithubIcon className={''}/>
                         </motion.a>
                         <motion.a
                             href='https://www.linkedin.com/in/xu%C3%A2n-b%E1%BA%A3o-l%C6%B0u-gia-473899221/'

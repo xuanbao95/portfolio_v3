@@ -1,3 +1,8 @@
+interface ClassName {
+    className: any
+}
+
+
 const TwitterIcon = ({className, ...props}:{className: any}) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +21,7 @@ const TwitterIcon = ({className, ...props}:{className: any}) => (
 )
 export default TwitterIcon;
 
-export const GithubIcon = ({className, ...rest}:{className: any}) => (
+export const GithubIcon = ({className, ...rest}:ClassName) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -32,7 +37,7 @@ export const GithubIcon = ({className, ...rest}:{className: any}) => (
         />
     </svg>
 );
-export const LinkedInIcon = ({className, ...rest}:{className: any}) => (
+export const LinkedInIcon = ({className, ...rest}:ClassName) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
