@@ -142,14 +142,12 @@ interface interfaceLink {
     href: string,
     title: string,
     className: string,
-    target: string,
-    toggle: any
 }
 
-const CustomLink = ({href, title, className, target, toggle}: interfaceLink) => {
+const CustomLink = ({href, title, className}: interfaceLink) => {
     const pathName = usePathname()
     return (
-        <Link href={href} target={!!target ? target : ''} className={`${className} relative group`}>
+        <Link href={href} className={`${className} relative group`}>
             {title}
             <span
                 className={`
@@ -162,8 +160,13 @@ const CustomLink = ({href, title, className, target, toggle}: interfaceLink) => 
         </Link>
     )
 }
-
-const CustomMobileLink = ({href, title, className, target, toggle}: interfaceLink) => {
+interface MobilLink{
+    href: string,
+    title:string,
+    className: string,
+    toggle: any
+}
+const CustomMobileLink = ({href, title, className, toggle}: MobilLink) => {
     const pathName = usePathname()
     const router = useRouter()
     const handleClick = ()=> {
@@ -172,7 +175,7 @@ const CustomMobileLink = ({href, title, className, target, toggle}: interfaceLin
         router.push(href)
     }
     return (
-        <button onClick={handleClick} href={href} target={!!target ? target : ''} className={`${className} relative group text-light dark:text-dark my-2`}>
+        <button onClick={handleClick} href={href} className={`${className} relative group text-light dark:text-dark my-2`}>
             {title}
             <span
                 className={`
