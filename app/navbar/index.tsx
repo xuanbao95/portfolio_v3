@@ -51,7 +51,7 @@ export default function Navbar() {
                         whileHover={{y: -2}}
                         whileTap={{scale: 0.9}}
                     >
-                        <LinkedInIcon/>
+                        <LinkedInIcon className={''}/>
                     </motion.a>
                     <motion.a
                         href='https://www.facebook.com/xuanbao.luugia'
@@ -105,7 +105,7 @@ export default function Navbar() {
                             whileHover={{y: -2}}
                             whileTap={{scale: 0.9}}
                         >
-                            <LinkedInIcon/>
+                            <LinkedInIcon className={''}/>
                         </motion.a>
                         <motion.a
                             href='https://www.facebook.com/xuanbao.luugia'
