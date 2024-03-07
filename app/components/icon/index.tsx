@@ -21,7 +21,7 @@ const TwitterIcon = ({className, ...props}:{className: any}) => (
 )
 export default TwitterIcon;
 
-export const GithubIcon = ({className, ...rest}:ClassName) => (
+export const GithubIcon = ({className, ...rest}:{className: any}) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -37,7 +37,7 @@ export const GithubIcon = ({className, ...rest}:ClassName) => (
         />
     </svg>
 );
-export const LinkedInIcon = ({className, ...rest}:ClassName) => (
+export const LinkedInIcon = ({className, ...rest}:{className: any}) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
