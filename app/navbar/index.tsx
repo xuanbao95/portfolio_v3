@@ -60,7 +60,7 @@ export default function Navbar() {
                         whileHover={{y: -2}}
                         whileTap={{scale: 0.9}}
                     >
-                        <FaceBookIcon/>
+                        <FaceBookIcon className={''}/>
                     </motion.a>
                     <button
                         onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
@@ -114,7 +114,7 @@ export default function Navbar() {
                             whileHover={{y: -2}}
                             whileTap={{scale: 0.9}}
                         >
-                            <FaceBookIcon/>
+                            <FaceBookIcon className={''}/>
                         </motion.a>
                         <button
                             onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
