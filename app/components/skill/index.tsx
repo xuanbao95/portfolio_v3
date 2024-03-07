@@ -40,8 +40,12 @@ export default function Skills() {
         </>
     )
 }
-
-const Skill =({name, x,y})=>{
+interface Interface {
+    name: string,
+    x: any,
+    y:any
+}
+const Skill =({name, x,y}: Interface)=>{
     return <motion.div
         className={`flex items-center justify-center
                     rounded-full font-semibold bg-dark text-light py-3 px-6
