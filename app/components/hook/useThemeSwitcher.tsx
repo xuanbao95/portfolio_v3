@@ -55,5 +55,5 @@ export const useThemeSwitcher = ()=>{
     },[mode])
 
 
-    return[mode, setMode]
+    return{mode, setMode}
 }

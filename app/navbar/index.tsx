@@ -9,7 +9,7 @@ import {useState} from "react";
 
 export default function Navbar() {
 
-    const [mode, setMode] = useThemeSwitcher()
+    const {mode, setMode} = useThemeSwitcher()
     const [isOpen, setIsOpen] = useState(false)
 
     const handleClick = () => setIsOpen(!isOpen)
