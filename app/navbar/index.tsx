@@ -175,7 +175,7 @@ const CustomMobileLink = ({href, title, className, toggle}: MobilLink) => {
         router.push(href)
     }
     return (
-        <button onClick={handleClick} href={href} className={`${className} relative group text-light dark:text-dark my-2`}>
+        <button onClick={handleClick} className={`${className} relative group text-light dark:text-dark my-2`}>
             {title}
             <span
                 className={`
