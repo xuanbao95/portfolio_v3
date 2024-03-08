@@ -84,9 +84,9 @@ export default function Navbar() {
                     animate={{scale: 1, opacity: 1}}
                 >
                     <nav className='flex items-center flex-col justify-center'>
-                        <CustomMobileLink href={'/'} title={'Home'}  toggle={handleClick}/>
-                        <CustomMobileLink href={'/about'} title={'About'}  toggle={handleClick}/>
-                        <CustomMobileLink href={'/projects'} title={'Projects'}  toggle={handleClick}/>
+                        <CustomMobileLink href={'/'} title={'Home'}  toggle={handleClick} className={''}/>
+                        <CustomMobileLink href={'/about'} title={'About'}  toggle={handleClick} className={''}/>
+                        <CustomMobileLink href={'/projects'} title={'Projects'}  toggle={handleClick} className={''}/>
                     </nav>
 
                     <nav className='flex items-center justify-center flex-wrap mt-2'>
