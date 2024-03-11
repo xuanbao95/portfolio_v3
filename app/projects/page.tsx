@@ -3,12 +3,10 @@ import LayOutPage from "../components/layout/index";
 import AnimatedText from "../components/animatedText/index";
 import Image from "next/image";
 import Link from 'next/link'
-import {GithubIcon} from "../components/icon/index";
 import upos from '../../public/images/projects/upos.png'
 import evo from '../../public/images/projects/evo.png'
 import nike from '../../public/images/projects/nike.png'
 import movie from '../../public/images/projects/movie.png'
-import {usePathname} from "next/navigation";
 export default function Projects() {
     return (
         <main className='w-full mb-16 bg-light dark:bg-dark flex flex-col items-center justify-center'>

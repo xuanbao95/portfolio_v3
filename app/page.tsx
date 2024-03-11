@@ -2,24 +2,21 @@
 import Image from "next/image";
 import Link from 'next/link'
 import LayOutPage from "./components/layout/index";
-import portfolio from '../public/images/profile/developer-pic-1.png'
+import portfolio from '../public/images/profile/me-2.jpg'
 import AnimatedText from "./components/animatedText/index";
 import {LinkArrow} from "./components/icon/index";
 import HireMe from "./hireMe/index";
 import lightBulb from '../public/images/svgs/miscellaneous_icons_1.svg'
-import TransitionEffect from "./components/transitionEffect/index";
-import {usePathname} from "next/navigation";
 export default function Home() {
-    const path = usePathname()
     return (
         <main className='flex text-dark w-full min-h-screen bg-light dark:bg-dark dark:text-light'>
             <LayOutPage className={'pt-0 md:pt-16 sm:pt-8'}>
                 <div className='flex items-center justify-between w-full lg:flex-col'>
-                    <div className='w-1/2 md:w-full'>
+                    <div className='w-1/2 md:w-full p-8'>
                         <Image
                             src={portfolio}
                             alt={'avatar'}
-                            className={'w-full h-auto lg:hidden md:inline-block md:w-full'}
+                            className={'w-full h-auto lg:hidden md:inline-block md:w-full rounded-2xl border-4 border-dark dark:border-light'}
                             priority
                             sizes={'(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'}
                         />
